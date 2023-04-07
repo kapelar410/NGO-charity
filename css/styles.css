@@ -55,7 +55,7 @@ h6{
 }
 .our-work{
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(https://rakhibeekrum.co.za/wp-content/uploads/2019/01/blog-4-1024x473.jpg);
-    height: 400px;
+    height: 300px;
 }
 .testimonials{
     height: 500px;
@@ -134,4 +134,9 @@ h6{
 }
 .social{
     color: grey;
+}
+.our-data{
+    z-index: -1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(https://rakhibeekrum.co.za/wp-content/uploads/2019/01/blog-4-1024x473.jpg);;
+    position: relative;
 }

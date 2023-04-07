@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/form_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Lobster&family=Ubuntu&display=swap" rel="stylesheet">
+    
+    <title>Donation form</title>
+</head>
+<body>
+    <div class="title"> 
+        <h1><img class="logo" src="images/logo.png" alt="logo">Gracious Giving</h1>
+    </div>
+    
+
+
+
+ <div class="form_container">
+   <form name="myform" method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
+    <input type="hidden" name="public_key" value="FLWPUBK_TEST-c85a23add9a1fdf9ee8f4c50208e0a4a-X" />
+    <input type="hidden" name="tx_ref" value="Gracious Giving" />
+    <!-- <input type="hidden" name="redirect_url" value="https://demoredirect.localhost.me/" />
+    <input type="hidden" name="meta[token]" value="54" /> -->
+     <div id="name" class="form_wrap form_grp">
+         <div class="form_item">
+             <label>Full Name</label>
+             <input type="text" name="customer[name]"/>
+         </div>
+     </div>
+     <div class="form_wrap">
+         <div id="email" class="form_item">
+             <label>Email Address</label>
+             <input type="email" name="email"/>
+         </div>
+     </div>
+     <div class="form_wrap">
+         <div class="form_item">
+             <label>Phone</label>
+             <input type="text" name="phone">
+         </div>
+     </div>
+     <div class="form_wrap">
+        <div id="amount" class="form_item">
+            <label>Amount</label>
+            <input type="text" name="amount" />
+        </div>
+    </div>
+     <button type="submit" class="btn btn-primary btn-lg">Donate</button>
+   </form>
+ </div>
+</div>
+
+
+</body>
+</html>

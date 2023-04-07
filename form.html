@@ -25,38 +25,24 @@
 
 
  <div class="form_container">
-   <form name="myform" method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
-    <input type="hidden" name="public_key" value="FLWPUBK_TEST-c85a23add9a1fdf9ee8f4c50208e0a4a-X" />
-    <input type="hidden" name="tx_ref" value="Gracious Giving" />
-    <!-- <input type="hidden" name="redirect_url" value="https://demoredirect.localhost.me/" />
-    <input type="hidden" name="meta[token]" value="54" /> -->
-     <div id="name" class="form_wrap form_grp">
-         <div class="form_item">
-             <label>Full Name</label>
-             <input type="text" name="customer[name]"/>
-         </div>
-     </div>
-     <div class="form_wrap">
-         <div id="email" class="form_item">
-             <label>Email Address</label>
-             <input type="email" name="email"/>
-         </div>
-     </div>
-     <div class="form_wrap">
-         <div class="form_item">
-             <label>Phone</label>
-             <input type="text" name="phone">
-         </div>
-     </div>
-     <div class="form_wrap">
-        <div id="amount" class="form_item">
-            <label>Amount</label>
-            <input type="text" name="amount" />
-        </div>
-    </div>
-     <button type="submit" class="btn btn-primary btn-lg">Donate</button>
-   </form>
- </div>
+     <form method="POST" action="https://checkout.flutterwave.com/v3/hosted/pay">
+        <input type="hidden" name="public_key" value="FLWPUBK_TEST-c85a23add9a1fdf9ee8f4c50208e0a4a-X" />
+        
+        <label>Email Address</label>
+        <input type="text" name="customer[email]"/><br>
+        
+        <label>Full Name</label>
+        <input type="text" name="customer[name]"/><br>
+        <input type="hidden" name="tx_ref" value="bitethtx-019203" />
+        
+        <label>Amount</label>
+        <input type="text" name="amount" />
+        
+        <input type="hidden" name="currency" value="NGN" />
+        <input type="hidden" name="meta[token]" value="54" />
+        <input type="hidden" name="redirect_url" value="https://flutterwave.com" /><br>
+        <button type="submit" id="start-payment-button" class="btn btn-primary btn-lg">Donate</button>
+      </form>
 </div>
 
 

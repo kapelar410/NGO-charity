@@ -1,3 +1,7 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
 h1{
     font-family: 'lobster', 'cursive';
     font-weight: bold;
@@ -17,13 +21,14 @@ h6{
 .title-image{
     width: 100%;
     margin-left: 100px;
+    height: auto;
 }
 .container{
     margin-top: 100px;
 }
 
 .navbar-brand{
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'ubuntu', 'sans-serif';
     color: #4E31AA;
 }
@@ -36,6 +41,7 @@ h6{
 .card{
     margin: 7% 18% 0%;
     text-align: center;
+    border: 0px;
 }
 .card-title{
     color: #4E31AA;
@@ -47,11 +53,12 @@ h6{
 }
 
 #logo{
-    width: 10%;
+    width: 80px;
+    height: auto;
 }
 #title{
     background-color: #97DEFF;
-    padding: 0px 100px;
+    padding: 0px 90px;
 }
 .our-work{
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(https://rakhibeekrum.co.za/wp-content/uploads/2019/01/blog-4-1024x473.jpg);
@@ -65,15 +72,16 @@ h6{
     color: #fff;
     text-align: center;
     font-family: 'Arvo', serif;
-    padding-top: 60px;
+    padding-top: 30px;
     font-size: 4rem;
+    height: max-content;
 }
 .what-we{
     color: #fff;
     text-align: center;
     font-family: 'Arvo', serif;
     font-size: 2rem;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .charity{
     width: 40%;
@@ -117,6 +125,7 @@ h6{
     margin: 3% 5%;
     font-family: sans-serif;
     color: #fff;
+    padding: 0px;
 }
 .footer-paragraph{
     font-family: sans-serif;
@@ -136,7 +145,23 @@ h6{
     color: grey;
 }
 .our-data{
-    z-index: -1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(https://rakhibeekrum.co.za/wp-content/uploads/2019/01/blog-4-1024x473.jpg);;
     position: relative;
+}
+#card-details.row{
+    margin: 0;
+}
+#row{  
+    padding: 0px;
+}
+#our-data{
+    padding: 0px;
+}
+.row{
+    margin: 0px;
+}
+
+#card-body{
+    border-radius: 25px;
+    background-color: #DDFFBB;
 }
